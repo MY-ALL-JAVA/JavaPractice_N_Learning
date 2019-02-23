@@ -1,0 +1,77 @@
+Java SE Development Model
+
+Overview 
+
+Customers
+ 
+
+The Participation Age is here, today, for the Java platform under the OpenJDK. This page describes the sponsored-contribution process for the JDK 6 and JDK 7 Projects. Other Projects may follow these conventions or may establish their own; please consult the appropriate Project pages for details. This process is intended for developers who already have the skills required to work on the JDK but who do not yet have full authorship (i.e., committer) rights.
+
+Contents 
+Source and Binary Snapshots
+Contribution Process
+Community Participation
+Licenses
+Related Links
+  
+ 
+Source and Binary Snapshots
+  
+Both the source and binary code for the current engineering build of the JDK are available for developers to understand and evaluate. Periodically, Oracle takes a "snapshot" of the development tree and posts the same code that Oracle engineers are actively developing to the JDK Community site on java.net. With this code, you can do the following:
+
+Examine the source code, understand what's "under the covers," and better use the platform's features in building and optimizing your own applications. 
+ 
+Test applications against the latest pre-release JDK under an evaluation license to assess compatibility with prior versions, and identify any issues very early in the process.
+Easy source and binary snapshot access are a critical part of any community development effort. We've made it easy to get involved - see for yourself.
+
+ 
+Contribution Process
+  
+Consider getting involved in the OpenJDK by visiting: http://openjdk.java.net/contribute/ for more details on the contribution process and then do the following:
+
+Print, sign, and fax back the Oracle Contributor Agreement.
+Get started by downloading and setting up your build environment.
+Pick a simple, self-contained fix to start, and get familiar with the submittal process.
+Work with a Java engineer to test, validate, and integrate your fix.
+Really, it is that simple! All you need to do to get started is agree to the JRL and the Oracle Contribution Agreement, and you're ready to roll.
+
+ 
+Community Participation
+  
+There are many ways you can get involved in the OpenJDK Community. The community homepage, is your gateway to participating in the implementation of Java SE. From this home page you can do the following:
+
+Join one of the many JDK Community projects (or start your own), from the core development project to research projects on new language features to laboratory projects on alternative virtual machine architectures. Read and comment on the code, contribute your ideas, and join in the discussion with your peers and Java engineers. 
+ 
+Join in the discussion on the current JDK projects, post to the forums, and get your ideas and feedback on the direction of the Java SE platform heard early enough to have a real impact. 
+ 
+Read the features and blog entries from Java engineers and community contributors to gain a deeper understanding of the internals of the JDK. 
+ 
+Blog about the JDK - be sure to let us know about it so it can be featured for the community. 
+ 
+Access the complete Java API documentation for Java SE. 
+ 
+Test your application on a binary snapshot and report any issues you uncover. 
+ 
+Work with Java's engineers to uncover and resolve important security issues prior to the general availability release. 
+ 
+Help translate the Java API documentation into your native language. 
+ 
+Delve into the implementation of Java API components to better tune your own application's use of the platform. 
+ 
+Use the JDK code as the basis for research or teaching in an academic setting.
+ 
+Licenses
+  
+If you want to contribute code back to the JDK community, the OpenJDK Community requires contributors to jointly assign their copyright on contributed code. If you haven't yet signed the Oracle Contributor Agreement (OCA) then please do so,
+
+This license is meant as a successor to the earlier Sun Community Source License (SCSL), but it is shorter, simpler, and easier to read. Since it lets you redistribute the JDK, you're required to pass the standard Java SE compatibility requirements to ensure that your implementation is compatible. It applies to currently released versions only of the JDK.
+
+With this license, we're bringing many of the advantages of the open-source development model to core Java technology, without weakening the cross-platform compatibility promise at the heart of the Java platform's market success. 
+
+ 
+Related Links
+  
+JDK Community
+Java Desktop Community
+JDK 6 Project
+
