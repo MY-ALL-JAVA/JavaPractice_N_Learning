@@ -1,0 +1,136 @@
+:: Java World ::
+
+--------------------------------------------------------------------------------
+Java Technical Key Notes & Best Pactices :  :  
+--------------------------------------------------------------------------------
+
+This Document Aims @ Studying Java (Mainly Java SE & Java EE)
+
+
+--
+#1 Chapter : 1          Java Fundamentals
+
+
+
+
+
+
+
+
+
+_________________________________________________________________________________
+TARGETS ::
+_________________________________________________________________________________
+Working With Open Jdk-x.x.x [Realease On Every 6 Months]
+Working with Open Jdk-x.x.x [LTS] [Realease For Every 3 Year]
+Working with jshell
+Working with Java SE
+Working With Java EE
+Working With Spring & Spring Boot
+Working With Hibernate
+Complete The Java SE Documentation
+__________________________________________________________________________________
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+#1  Java Fundamentals ::
+-------------------------
+Java Is A True Object Oriented Programming Language. 
+
+Below is a list of java primative data type :
+int(4 bytes), float(4 bytes), double(8 bytes), char(1byte), long(8 byte), bit(1 byte), byte(8 byte)
+
+important features of java :: Distributed, High Interpreted, Oop, MultiThreaded, Architectural Neutral
+
+OOP Principles :
+OOP Allows us to decompose a problem into a number of entities called Object, and then Built Data N Function together around it.
+Object : Is an Instance of Class.
+    Data Abstraction & Encapsulation
+    Polymorphism
+    Inheritance
+    ...
+
+
+DataTypes In Java ::
+    Primitive
+        |   --  Boolean
+        |   --  Numeric
+        |           |   --  Character
+        |           |   --  Integeral
+        |                        |   --  Integer (byte, short, int, long)
+        |                        |   --  Floating Point (Float, Double)
+    NonPrimitive
+        |   --  String, Array, etc..
+
+
+Calling / Invoking ::
+    Calling a method refers to - calling it explicitely in a program.
+    Invoking a method refers to - Method is get called by JVM, Sometimes is also refered to as Callback.
+
+Description On Simple Java Program :
+> The Class Name Should be same name as File Name.
+> Class Name Must Starts with a Capital Letter.
+> The Code Snippet :: public static void main(String args[]){} is described as follow.
+    It is required acess specifier as - public - as needs to acess by the JVM Class, Which is out side the current class.
+    The - static - is required as the main() method, needs to be acess without creating an object of the class contains it.
+    return type void - referes to the method doesn't return anything
+    argument to the main method args[] is of String type, which holds the argument passed to the main program while running the program from the command line.
+    However the 0th elemet is the Program name(i.e. class name) itself.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
