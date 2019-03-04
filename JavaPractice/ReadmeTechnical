@@ -81,7 +81,70 @@ Description On Simple Java Program :
     argument to the main method args[] is of String type, which holds the argument passed to the main program while running the program from the command line.
     However the 0th elemet is the Program name(i.e. class name) itself.
 
+Constructor In Java :
+    > Constructor name same as the containing class  name
+    > Constructor has no return type, but The Constructor can be thought of as a Code Block, Similiar to static block in java
+      & return type is similiar to the class type.
+    > Constructor returns the instance of the class.
 
+
+**
+It's illegal to start expression such as declaring variable, while calling a function. the start of such expressin requires a ; terminated syntax
+the only nested expression possible is inside, for loop..
+
+Constructor can be overloaed by specifying unique formal parameter.
+this - keyword is used to refering to the current object's Properties or Methods.
+
+Garbage Collection :
+When no reference to an object is found. that memory occupied with that object is released automatically through garbage collection mechanism.
+
+for the JVM to know that the object is no longer referenced. such instances could be decided @ the time of code compilation.
+& the memory occupied by the object is freed automatically
+
+System.gc() - refers to the java garbage collector
+System.gc() : The Use of this function is very rare in real practice. this is used to free the memory space explicitely.
+
+Finalize() : method is used to make sure resources such as FileHandler are free before we destroy an object
+general syntax :
+protected void finalize(){//..}
+
+In Java Programming Language We Have Two Class:
+    |
+    |--java
+    |--Java
+They both conveys different purpose.
+
+
+java.lang.Object :
+Is the supper class of all the class available in java.
+Constructor Method :: Object()
+The Following methods are available inside the Object class
+    |
+    |-- getClass()
+    |-- hashCode()
+    |-- equals()
+    |-- clone()
+    |-- toString()
+    |-- notify()
+    |-- notifyAll()
+    |-- wait()
+    |-- finalize()
+
+protected void finalize() throws Throwable
+
+Called by the [garbage collector] [GC] {on an object} when garbage collection determines that there are no more references to the object.
+A subclass overrides the finalize method to dispose of system resources or to perform other cleanup.
+
+::
+Any class overrides the method, to dispose of system resources such as [FileHandler], [DB Object] & Like..
+Before the final cleanup happens by the Garbage collector [ System.gc() ]
+
+The general contract of finalize is that it is invoked if and when the Java[TM] virtual machine [JVM] has determined that there is no longer any means by which this object can be accessed by any thread that has not yet died, except as a result of an action taken by the finalization of some other object or class which is ready to be finalized.
+The finalize method may take any action, including making this object available again to other threads; the usual purpose of finalize, however, is to perform cleanup actions before the object is irrevocably discarded.
+
+For example, the finalize method for an object that represents an input/output connection might perform explicit I/O transactions to break the connection before the object is permanently discarded.
+
+In Short : A Programmer must frre up any resources that is occupied by the particular Object before it is Collected By The Garbage collector
 
 
 
