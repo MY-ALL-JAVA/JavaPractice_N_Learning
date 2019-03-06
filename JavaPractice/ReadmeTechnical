@@ -144,16 +144,25 @@ The finalize method may take any action, including making this object available 
 
 For example, the finalize method for an object that represents an input/output connection might perform explicit I/O transactions to break the connection before the object is permanently discarded.
 
-In Short : A Programmer must frre up any resources that is occupied by the particular Object before it is Collected By The Garbage collector
+In Short : A Programmer must free up any resources that is occupied by the particular Object before it is Collected By The Garbage collector
 
 
+_______
+Method Overloading ::
+In Java a method can be overloaed with (uniqueness of formal parameter)-
+    - Number Of parameter
+    - Type Of Parameter
+    - Order Of Parameter
 
 
+______
+Type Casting ::
+The Type casting is of two type -
+    Explicit Type Casting
+    Implicit Type Casting
 
-
-
-
-
+An explicit type casting is done by specifying the type in the bracket like : (float) (int)
+implicit type casting is done by the interpreter. in such case be aware about the problem of down casting (see upcasting for more details)
 
 
 
