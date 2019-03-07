@@ -164,6 +164,41 @@ The Type casting is of two type -
 An explicit type casting is done by specifying the type in the bracket like : (float) (int)
 implicit type casting is done by the interpreter. in such case be aware about the problem of down casting (see upcasting for more details)
 
+When two data type are compatible with each other then the conversion between then happns 
+
+widening :
+When assign a smaller data type to a bigger data type then the widening takes palace, provided the two data type are compatible with each other.
+byte->short->int->long->float->double
+
+Narrowing :
+When a longer data type is assigned to a smaller data type then Narrowing takes palce.
+
+**
+Beaware of Float which is a class {} not a primary type.
+
+**
+Passing by reference is not available in java, so you can pass an object, to achive the similiar functionality.
+any changes to the member of object will reflect in the passed formal parameter ..,
+
+________
+Reccursion :
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
