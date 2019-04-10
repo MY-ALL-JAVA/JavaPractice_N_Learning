@@ -253,8 +253,24 @@ public void doSomething(SomeObject obj) {
 }
 
 
+________
+Use Of Static
+When a member is declared as static, it can be acessed before any object of the class is getting created.
+Methods Declared as static have the following restrictions
+    > They can only call other static methods
+    > Must only acess the static Properties
+    > Can't refer to this "this" (or) "super" in any way
+Class Can be declared as static
 
 
+_______
+Array
+An array in java can be implemented as Object
+There is a special array attribute called 'length' can be used to determine the length of an array
+
+
+____
+Nested & Inner Class
 
 
 
