@@ -1,17 +1,26 @@
 
-
 https://education.oracle.com/java/java-se/product_267?certPage=true
 
+JUNIOR-ASSOCIATE -- ASSOCIATE
+PROFESSIONAL -- MASTER -- SPECIALIST -- EXPERT
 
 
-JUNIOR ASSOCIATE ASSOCIATE PROFESSIONAL MASTER SPECIALIST EXPERT
+[Java Platform, Standard Edition 11]
+
+Java SE 11 Programmer I || Exam Number: 1Z0-815
+
+Exam Title:	Java SE 11 Programmer I
+Exam Number: 1Z0-815
+Exam Price:	₹10,475.00 More on exam pricing
+Format:	Multiple Choice
+Duration:	180 Minutes
+Number of Questions: 80
+Passing Score: 63%
+Validated Against: This exam has been validated against Java 11.
 
 
-_________________________________________________________________________________________________________________________________________________________________________________________________________________________
-[[[     Java SE 8 Programmer I 1Z0-808      ]]]
+https://education.oracle.com/java-se-11-programmer-i/pexam_1Z0-815
 
-
-Exam Price: ₹ 10265 | Duration: 150 | Passing Score: 65% | 150 marks total
 
 
 
@@ -58,7 +67,7 @@ https://education.oracle.com/products/courP_3348
 
 
 
-pplication Developers
+Aplication Developers
 System Administrator
 Project Manager
 Developer
