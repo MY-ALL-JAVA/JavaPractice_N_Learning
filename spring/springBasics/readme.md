@@ -186,6 +186,53 @@ TUTORIAL 3 [Spring Framework - Architecture]
         supports the `testing` of `Spring components` with `JUnit` or `TestNG` `frameworks`.
 
 
+________________________________________________________________________________________________________________________
+TUTORIAL 4 [Spring - Environment Setup]
+------------------------------------------------------------------------------------------------------------------------
+Set PATH(java_install_dir/bin) and JAVA_HOME(java_install_dir) environment variables
+to refer to the directory that contains java and javac.
+
+in your ~/.bashrc,
+	PATH /usr/local/jdk1.6.0_15/bin:$PATH
+	JAVA_HOME /usr/local/jdk1.6.0_15
+	& then publish your enviornment, source ~/.bashrc
+
+
+IDE
+	https://www.eclipse.org/downloads/
+	Once you download the installation,
+	unpack the binary distribution into a convenient location.
+	For example, /usr/local/eclipse on Linux/Unix and finally set PATH variable appropriately.
+
+Install Apache Common Logging API
+	Download binaries
+		@ https://commons.apache.org/logging/download_logging.cgi
+	Unpack the binary distribution into a convenient location
+		/usr/local/commons-logging-1.1.1 on Linux/Unix.
+	Make sure you set your CLASSPATH variable on this directory properly.
+		export CLASSPATH='/usr/local/commons-logging-1.2'
+
+Setup Spring Framework Libraries
+	Download spring framework libraries,
+	https://repo.spring.io/release/org/springframework/spring
+
+
+JAVA_HOME
+	Your java install directory, responsible for `java` command.
+	Typically your java install directory.
+PATH
+	Path to javaInstallFolder/bin directory.
+	java_install_dir/bin
+	Responsible for `javac` command.
+CLASSPATH
+	A path where you place your compiled .class files
+	export CLASSPATH=/usr/local/commons-logging-1.2
+	export CLASSPATH=$CLASSPATH:'/Your/Path/To/spring-framework-5.2.5.RELEASE'
+
+	Then, $ source ~/.bashrc (home dir /&/ .bashrc)
+	Verify,
+	echo $CLASSPATH
+
 
 
 
