@@ -3,19 +3,36 @@
  */
 package com.subratpalhar;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+//import org.springframework.context.ApplicationContext;
+//import org.springframework.context.support.ClassPathXmlApplicationContext;
+//
+///**
+// * @author root
+// *
+// */
+//public class MainApp {
+//
+//  public static void main(String args[]) {
+//    ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+//    HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
+//    obj.getMessage();
+//  }
+//
+//}
+
 
 /**
- * @author root
- *
+ * Type XmlBeanFactory is deprecated
  */
-public class MainApp {
+import org.springframework.beans.factory.InitializingBean; 
+import org.springframework.beans.factory.xml.XmlBeanFactory; 
+import org.springframework.core.io.ClassPathResource;  
 
-  public static void main(String args[]) {
-    ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
-    HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
-    obj.getMessage();
-  }
-
+public class MainApp { 
+   public static void main(String[] args) { 
+      XmlBeanFactory factory = new XmlBeanFactory (new ClassPathResource("Beans.xml")); 
+      HelloWorld obj = (HelloWorld) factory.getBean("helloWorld");    
+      obj.getMessage();    
+   }
 }
+

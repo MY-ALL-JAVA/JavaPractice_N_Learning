@@ -282,20 +282,48 @@ Following two important points are to be noted about the main program −
 ** your project's build output directory will be /projectFolder/bin directory
 
 ________________________________________________________________________________________________________________________
-TUTORIAL #
+TUTORIAL [Spring - IoC Containers]
 ------------------------------------------------------------------------------------------------------------------------
+The Spring `container` (Service-container) is at the core of the Spring Framework.
+The container will create the objects, wire them together, configure them,
+and manage their complete life cycle from creation till destruction.
+The Spring container uses DI to manage the components that make up an application.
+These objects are called Spring Beans, which we will discuss in the next chapter.
+ [Bean(service)-created-by-container(service-container)]
+
+The `container gets its instructions` on `what objects to instantiate, configure, and assemble`
+by reading the `configuration metadata provided`.
+The `configuration metadata` can be represented either by `XML`, `Java annotations`, or `Java code`.
+The Spring `IoC container` makes use of `Java POJO classes and configuration metadata`
+`to produce` a `fully configured and executable system` or `application`.
+
+POJO + META-DATA => ContainerOutput
+
+spring provides two distinct type of container,,
+  - Spring Bean Factory Container
+  - Spring Application Factory Container
+
+  Spring BeanFactory Container
+    This is the simplest container providing the basic `support for DI`
+    and is `defined by` the `org.springframework.beans.factory.BeanFactory interface`.
+
+    The `BeanFactory` and `related interfaces`,such as `BeanFactoryAware`, `InitializingBean`, `DisposableBean`,
+    for the purpose of backward compatibility with a large number of `third-party frameworks` that integrate with Spring.
+
+    There are a number of implementations of the `BeanFactory interface`
+    that are come straight out-of-the-box with Spring.
+    The most commonly used BeanFactory implementation is the `XmlBeanFactory class`.
+    This container reads the `configuration metadata from an XML file`
+    and uses it to create a fully configured system or application.
 
 
+    "XmlBeanFactory factory = new XmlBeanFactory (new ClassPathResource("Beans.xml"));"
+      The first step is to `create a factory object` where we used the framework
+      APIXmlBeanFactory() to create the factory bean.
+      The XmlBeanFactory() API takes care of creating and initializing all the objects,
+      i.e. beans mentioned in the configuration file.
 
-
-
-
-
-
-
-
-
-
+      ClassPathResource() API to load the bean configuration file available in CLASSPATH.
 
 
 ________________________________________________________________________________________________________________________
