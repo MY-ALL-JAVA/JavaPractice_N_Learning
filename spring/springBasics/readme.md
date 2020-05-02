@@ -325,7 +325,41 @@ spring provides two distinct type of container,,
 
       ClassPathResource() API to load the bean configuration file available in CLASSPATH.
 
+  Spring ApplicationContext Container (Spring's advanced container)
+    This `container` adds more enterprise-specific functionality
+    such as the ability to `resolve textual messages` from a `properties-file`
+    and the ability `to ""publish"" application-events` to `interested event-listeners`.
+    This container is 'defined by' the `org.springframework.context.ApplicationContext` `interface`.
 
+    It can load 'bean-definitions', 'wire-beans-together', and `dispense-beans` upon request.
+
+    The most commonly used ApplicationContext implementations are −
+      -- FileSystemXmlApplicationContext
+        This `container loads` the `definitions of the beans` from an `XML-file`.
+        Here you need to provide the `full path of the XML bean configuration file` to the constructor.
+
+      -- ClassPathXmlApplicationContext
+        This container loads the definitions of the beans from an XML file.
+        Here you do not need to provide the `full path of the XML file`
+        but you need to set `CLASSPATH properly`
+        because this container will look, `bean configuration XML file` `in CLASSPATH`.
+
+      -- WebXmlApplicationContext
+        This container `loads the XML file` with `definitions of all beans` `'from-within' a web application`.
+
+
+      ApplicationContext context = new FileSystemXmlApplicationContext("src/Beans.xml");
+
+      To create factory object where we used framework APIFileSystemXmlApplicationContext
+      to create the factory bean after loading the bean configuration file from the given path.
+      TheFileSystemXmlApplicationContext() API takes care of creating and initializing all the objects
+      ie. beans mentioned in the XML bean configuration file.
+
+  The `ApplicationContext container` includes all functionality of the `BeanFactorycontainer`,
+  so it is generally `recommended over BeanFactory`.
+  `BeanFactory` can still be used for `lightweight applications like mobile devices`
+  `or` `applet-based applications` where `data-volume` and `speed` is `significant`.
+  
 ________________________________________________________________________________________________________________________
 TUTORIAL #
 ------------------------------------------------------------------------------------------------------------------------
