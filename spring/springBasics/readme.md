@@ -361,22 +361,56 @@ spring provides two distinct type of container,,
   `or` `applet-based applications` where `data-volume` and `speed` is `significant`.
   
 ________________________________________________________________________________________________________________________
-TUTORIAL #
+TUTORIAL [Spring - Bean Definition]
 ------------------------------------------------------------------------------------------------------------------------
+[BEAN]
+  The objects that form the backbone of your application
+  and that are `managed by the Spring IoC container` (central-dependency-resolver-n-injector) are called beans.
+  you may compare bean as service in Angular & in Laravel world.
 
+  _____________________________________
+  | Spring                    Angular |
+  -------------------------------------
+  | Bean                      Service |
+  | Ioc Container             Provider|
+  -------------------------------------
 
+  A bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container.
+  These beans are created with the configuration metadata that you supply to the container.
+    - How to create a bean
+    - Bean's lifecycle details
+    - Bean's dependencies
+  The configuration could be of type
+    - XML based configuration file.
+    - Annotation-based configuration
+    - Java-based configuration
 
-
-
-
-
-
-
-
-
-
-
-
+  Configuration metadata translates into a set of the properties that make up each bean definition.
+    class
+      This attribute is mandatory and `specifies the bean class to be used` `to create the bean`.
+    name
+      This attribute specifies the `bean identifier uniquely` (dependency token :Angular)
+      In XMLbased configuration metadata,
+      you use the id and/or name attributes to specify the bean identifier(s).
+    scope
+      This attribute specifies the `scope of the objects` created `from a particular "bean-definition"`
+    constructor-arg
+      This is used `to inject the dependencies`. (typehint: Laravel)
+      use /http/controller/User
+      hello(User $user, Request $request) {} //type-hint
+    properties
+      This is `used to inject the dependencies`.
+    autowiring mode
+      This is `used to inject the dependencies`.
+    lazy-initialization mode
+      A `lazy-initialized bean` `tells the IoC container`
+      `to create a bean instance` `when it is first requested`, (lazyloading :Angular)
+      `rather than at the startup`.
+    initialization method
+      A `callback to be called` just after `all necessary properties on the bean have been set by the container`.
+    destruction method
+      A `callback to be used`
+      when the `container containing the bean is destroyed`.
 
 ________________________________________________________________________________________________________________________
 TUTORIAL #
