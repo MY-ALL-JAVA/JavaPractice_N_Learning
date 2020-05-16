@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/usr/local/commons-logging-1.2/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="/home/subrat/Desktop/subrat/a_learing/gitHub/MY-ALL-JAVA/JavaPractice_N_Learning/spring/springBasics/spring-framework-5.2.5.RELEASE/libs/spring-websocket-5.2.5.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="/home/subrat/Desktop/subrat/a_learing/gitHub/MY-ALL-JAVA/JavaPractice_N_Learning/spring/springBasics/spring-framework-5.2.5.RELEASE/libs/spring-websocket-5.2.5.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="/home/subrat/Desktop/subrat/a_learing/gitHub/MY-ALL-JAVA/JavaPractice_N_Learning/spring/springBasics/spring-framework-5.2.5.RELEASE/libs/spring-websocket-5.2.5.RELEASE.jar"/>
@@ -66,5 +64,8 @@
 	<classpathentry kind="lib" path="/home/subrat/Desktop/subrat/a_learing/gitHub/MY-ALL-JAVA/JavaPractice_N_Learning/spring/springBasics/spring-framework-5.2.5.RELEASE/libs/spring-aop-5.2.5.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="/home/subrat/Desktop/subrat/a_learing/gitHub/MY-ALL-JAVA/JavaPractice_N_Learning/spring/springBasics/spring-framework-5.2.5.RELEASE/libs/spring-aop-5.2.5.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="/home/subrat/Desktop/subrat/a_learing/gitHub/MY-ALL-JAVA/JavaPractice_N_Learning/spring/springBasics/spring-framework-5.2.5.RELEASE/libs/spring-aop-5.2.5.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/usr/local/commons-logging-1.2/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/usr/local/commons-logging-1.2/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

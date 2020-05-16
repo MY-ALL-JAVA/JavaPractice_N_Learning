@@ -279,7 +279,13 @@ Following two important points are to be noted about the main program −
   which finally can be `casted` `to the actual object`.
   --Once you have an object, you can use this object to call any class method.?
 
-** your project's build output directory will be /projectFolder/bin directory
+** your project's output directory will be /projectFolder/bin directory
+
+
+ECLIPSE BUILD ERROR::
+JavaBuildPath - ConfigureBuildPath - Libraries - Add Library - JRE System Library - work space default jre
+finish
+
 
 ________________________________________________________________________________________________________________________
 TUTORIAL [Spring - IoC Containers]
@@ -411,14 +417,6 @@ TUTORIAL [Spring - Bean Definition]
     destruction method
       A `callback to be used`
       when the `container containing the bean is destroyed`.
-
-________________________________________________________________________________________________________________________
-TUTORIAL #
-------------------------------------------------------------------------------------------------------------------------
-
-
-
-
 
 
 
