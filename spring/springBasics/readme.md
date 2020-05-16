@@ -439,20 +439,16 @@ TUTORIAL [Spring - Bean Scopes]
     This scopes a bean definition to a `global HTTP session`.
     Only valid in the context of a web-aware Spring ApplicationContext.
 
-The singleton scope
-This single instance is stored in a cache of such singleton beans, and all subsequent requests and references for that named bean return the cached object.
-<bean id = "..." class = "..." scope = "singleton"></bean>
+    The singleton scope
+    This single instance is stored in a cache of such singleton beans, and all subsequent requests and references for that named bean return the cached object.
+    <bean id = "..." class = "..." scope = "singleton"></bean>
 
+  prototype
+    If the scope is set to prototype,
+    the Spring IoC container creates a new bean instance of the object every time a request for that specific bean is made.
 
-
-
-
-
-
-
-
-
-
+    As a rule, use the prototype scope for all state-full beans and the singleton scope for stateless beans.
+    <bean id = "helloWorld" class = "com.subratpalhar.HelloWorld" scope = "prototype"></bean>
 
 ________________________________________________________________________________________________________________________
 TUTORIAL #
