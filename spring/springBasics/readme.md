@@ -418,8 +418,30 @@ TUTORIAL [Spring - Bean Definition]
       A `callback to be used`
       when the `container containing the bean is destroyed`.
 
+________________________________________________________________________________________________________________________
+TUTORIAL [Spring - Bean Scopes]
+------------------------------------------------------------------------------------------------------------------------
+[BeanScopes]
+  BeanScope defines `object creation behaviour`(singletone|prototype|etc..), when a bean is reequested for.
 
+  singleton
+    If you want Spring to `return the same bean instance` each time one is needed.
+  prototype
+    `New bean instance` each time one is needed,
+    you should declare the bean's scope attribute to be.
+  request
+    This scopes a bean definition to an `HTTP request`.
+    Only `valid in the context of a web-aware` Spring `ApplicationContext`.
+  session
+    This scopes a bean definition to an `HTTP session`.
+    Only valid in the context of a web-aware Spring ApplicationContext
+  global-session
+    This scopes a bean definition to a `global HTTP session`.
+    Only valid in the context of a web-aware Spring ApplicationContext.
 
+The singleton scope
+This single instance is stored in a cache of such singleton beans, and all subsequent requests and references for that named bean return the cached object.
+<bean id = "..." class = "..." scope = "singleton"></bean>
 
 
 
